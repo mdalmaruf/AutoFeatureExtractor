@@ -1,0 +1,50 @@
+{   0} main() <int main (void) at main_modified.c:117>:
+{   1}     malloc()
+{   1}     fopen()
+{   1}     printf()
+{   1}     fprintf()
+{   1}     fgets()
+{   1}     system() <void system (struct VEHICLE_STATUS vehicle_status) at main_modified.c:92>:
+{   2}         controller()
+{   2}         light_controller() <void light_controller (struct VEHICLE_STATUS vehicle_status) at light_controller.c:19>:
+{   3}             sidelight() <int sidelight () at light_controller.c:3>
+{   3}             low_beam_headlamp() <void low_beam_headlamp () at light_controller.c:7>
+{   3}             high_beam_headlamp() <void high_beam_headlamp () at light_controller.c:11>
+{   3}             auto_setlight() <void auto_setlight () at light_controller.c:14>
+{   2}         sensors() <void sensors (struct VEHICLE_STATUS vehicle_status) at main_modified.c:78>:
+{   3}             gas_pedal_sensor()
+{   3}             brake_pedal_sensor()
+{   3}             steering_wheel_sensor()
+{   3}             wheel_sensor()
+{   2}         actuators() <void actuators (struct VEHICLE_STATUS vehicle_status) at main_modified.c:86>:
+{   3}             direction_actuator()
+{   3}             fuel_actuator()
+{   3}             brake_actuator()
+{   2}         engine() <void engine () at main_modified.c:7>:
+{   3}             gasoline() <void gasoline () at main_modified.c:12>
+{   3}             electric() <void electric () at main_modified.c:13>
+{   2}         gear_shift() <void gear_shift () at main_modified.c:16>:
+{   3}             manual() <void manual () at main_modified.c:21>
+{   3}             automatic() <void automatic () at main_modified.c:22>
+{   2}         airbag() <void airbag () at main_modified.c:24>
+{   2}         infotainment() <void infotainment () at main_modified.c:26>:
+{   3}             communication() <void communication () at main_modified.c:36>:
+{   4}                 gps() <void gps () at main_modified.c:43>
+{   4}                 weather() <void weather () at main_modified.c:44>
+{   3}             dispaly() <void dispaly () at main_modified.c:31>:
+{   4}                 google_map() <void google_map () at main_modified.c:41>
+{   4}                 info_video() <void info_video () at main_modified.c:42>
+{   1}     Test() <void Test (FILE *trjc, struct VEHICLE_STATUS vehicle, FILE *fp) at main_modified.c:107>:
+{   2}         software_test() <void software_test (FILE *trjc, struct VEHICLE_STATUS vehicle, FILE *fp) at main_modified.c:112>:
+{   3}             simulation() <void simulation (FILE *trjc, struct VEHICLE_STATUS vehicle_status, FILE *fp) at main_modified.c:51>:
+{   4}                 differential_time()
+{   4}                 vehicle_velocity()
+{   4}                 vehicle_angle()
+{   4}                 position_integration()
+{   4}                 driver_attitude()
+{   4}                 information_display()
+{   2}         hardware_test()
+{   1}     feof()
+{   1}     fclose()
+{   1}     free()
+{   1}     getchar()
